@@ -1,0 +1,154 @@
+body { 
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+#siteroot { 
+    width:100%; 
+}
+#gridcontainer { 
+    width:100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 200px auto; 
+    height:50px;
+    background-color: #CACACA; 
+    text-align: center;
+    padding-top: 30px;
+    border-bottom:1px solid #000;
+}
+#logo { 
+    font-family: 'Copse';
+    text-align: center;
+}
+#logo a:link { 
+    /* no underline on the logo */
+    text-decoration: none;
+    color: #000;
+}
+#menu {
+    font-size: 1.1em;
+    display: grid;
+    justify-content: end;
+    /* 8 columns */
+    grid-template-columns: auto auto auto auto auto auto auto auto; 
+}
+.menuitem { 
+    /* the menu links */
+    padding-left:10px; 
+    padding-right:10px; 
+}
+.menuitem a:link { 
+    /* no underline on the menu links */
+    text-decoration: none;
+    color: #000;
+}
+.menuitem a:hover {
+    /* mouse-over change color */
+    color: #7c817d;
+}
+.menuend { 
+    /* a little space on the right side */
+    padding-left:30px; 
+    padding-right:30px; 
+}
+
+.searchmouseover {
+    /* get darker when mouseover */
+    border:2px solid #000; 
+    border-radius:20px; 
+    width:100px; 
+    padding:10px 20px;
+    background-color: #e5dfc9;
+}
+
+.socialicon {
+    /* social media icons */
+    width:24px;height:24px;object-fit:cover;object-position:50% 50%;
+}
+#socialstrip {
+    display: grid;
+    /* 5 columns */
+    grid-template-columns: auto auto auto auto auto; 
+}
+
+/* two squares in content */
+#leftright {
+    padding-top:100px;
+    padding-bottom:100px;
+    height:100px;
+    font-size:100px;
+    text-align: center;
+    background-color: #EDE3DB; 
+    }
+
+.blankimage {
+    width:100%;
+    height:auto;
+
+}
+
+/* a space for blog post cards */
+#blogpostbox {
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    
+    }
+    /* the blog card container */
+    .blogcard {
+    width:220px;
+    height:320px;
+    margin:20px;
+    background-image:url("./images/image-border-tina.png");
+    background-repeat:repeat-none;
+    background-color:White;
+
+    }
+    /* Title of the Blog */
+    .blogtitle {
+    font-size: .8em;
+    text-align:center;
+    font-weight:bold;
+
+    }
+    /* make blog title links gray and no underline */
+    .blogtitle a {
+    color:black;
+    text-decoration: none;
+
+    }
+    /* image frame for blog card */
+    .blogimage {
+    width:184px;
+    height:270px;
+    padding: 18px 18px 2px 18px;
+    overflow:hidden;
+
+    }
+    /* blog image box */
+    .blogcover {
+    width:184px;
+    height:270px;
+    border-radius:7px;
+    background-repeat: no-repeat;
+    background-size: 184px 270px;
+
+    }
+    /* specific image for blogcard, ie image1 image2 image3 */
+    .image1 {
+    background-image: url("./images/purse.png");
+
+    }
+    /* background color for blog card */
+    .white {
+    background-color: white;
+    border-bottom:2px solid #000;
+
+    }
+    /* Copyright */
+    #copyright {
+    text-align:center;
+    padding:40px;
+    }
