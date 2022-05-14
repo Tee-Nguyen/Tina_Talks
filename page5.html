@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tina Talks</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet'>
+        <style>
+           
+            body { 
+                margin: 0;
+                font-family: 'Cormorant';
+                font-size: 18px;
+            }
+            #siteroot { 
+                width:100%; 
+            }
+            #gridcontainer { 
+                width:100%;
+                position: fixed;
+                display: grid;
+                grid-template-columns: 200px auto; 
+                height:50px;
+                background-color: white; 
+                text-align: center;
+                padding-top: 30px;
+                border-bottom:1px solid #000;
+            }
+            #logo { 
+                font-family: 'Copse';
+            }
+            #logo a:link { 
+                /* no underline on the logo */
+                text-decoration: none;
+                color: #000;
+            }
+            #menu {
+                font-size: 1.1em;
+                display: grid;
+                justify-content: end;
+                /* 8 columns */
+                grid-template-columns: auto auto auto auto auto auto auto auto; 
+            }
+            .menuitem { 
+                /* the menu links */
+                padding-left:10px; 
+                padding-right:10px; 
+            }
+            .menuitem a:link { 
+                /* no underline on the menu links */
+                text-decoration: none;
+                color: #000;
+            }
+            .menuitem a:hover {
+                /* mouse-over change color */
+                color: #7c817d;
+            }
+            .menuend { 
+                /* a little space on the right side */
+                padding-left:30px; 
+                padding-right:30px; 
+            }
+            #searchbox { 
+                /* move input up a little */
+                margin-top:-5px;
+            }
+            .search {
+                /* input style */
+                border:1px solid #000; 
+                border-radius:20px; 
+                width:100px; 
+                padding:10px 20px;
+            }
+            .searchmouseover {
+                /* get darker when mouseover */
+                border:2px solid #000; 
+                border-radius:20px; 
+                width:100px; 
+                padding:10px 20px;
+                background-color: #e5dfc9;
+            }
+            
+            .socialicon {
+                /* social media icons */
+                width:24px;height:24px;object-fit:cover;object-position:50% 50%;
+            }
+            #socialstrip {
+                display: grid;
+                /* 5 columns */
+                grid-template-columns: auto auto auto auto auto; 
+            }
+        
+            /* two squares in content */
+            #leftright {
+                display: grid;
+                grid-template-columns: 50% 50%; 
+                text-align: center;
+            }
+            /* left side box */
+            #lbox {
+                background-color: #D7D9D7;
+                font-size:3em;
+                text-transform: uppercase;
+        
+            }
+            /* right side box */
+            #rbox {
+                background-color: #D7D9D7;
+                font-size:3em;
+                text-transform: uppercase;
+            }
+            .blankimage {
+                width:100%;
+                height:auto;
+            }
+            /* a space for blog post cards */
+            #blogpostbox {
+                background-color: #8C8C8C;
+                width:100%; 
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: center;
+                
+            }
+            
+            .blogcard {
+            width:200px;
+            height:325px;
+            margin:20px;
+            border:2px solid #000;
+            border-radius:5px;
+            }
+            /* blogtitle */ 
+            .blogtitle {
+                padding-top:5px;
+                text-align:center;
+                font-weight:bold;
+                height:35px;
+            }
+            /* image for blog card */
+            .blogimage {
+                width:200px;
+                height:285px;
+                border-top:1px solid #000;
+                border-radius: 0 0 5px 5px;
+            }
+            /* background color for blog card */
+            .white {
+                background-color: white;
+                border-bottom:2px solid #000;
+            }
+            /* Copyright */
+            #copyright {
+                text-align:center;
+                padding:40px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="siteroot">
+                <!--Begin Menu-->
+                <div id="menu">
+                    <div class="menuitem">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="menuitem">
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+        
+                    <div class="menuitem">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+
+                    <div class="menuitem">
+                        <div id="socialstrip">
+                        
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/tina-nguyen-85968123a/">
+                                <img class="socialicon" src="./images/li.png" alt="Linked In Link">
+                                </a>
+                            </div>
+                        </div> <!-- End of Social Media -->
+                    </div> <!-- End of Menu Item -->
+                    <div class="menuend"> <!--blank space--> </div>
+                </div> <!-- End of Menu -->
+            </div> <!-- End of Top Header -->
+            <!--Begin Site Content-->
+            <div id="content">
+        </style>
+    </head>
+    <body>
+        
+        <h1><p style="color: black">Blockchain & Bitcoin</h1></p>
+
+        I previously mentioned blockchain technology being used in my post about Chanel and NFC. The microchip that they use has blockchain technology which is a technique of storing data that is virtually impossible to alter or edit once it's on record. Did you know that Bitcoin also uses blockchain technology? Bitcoin is not only just a cryptocurrency, its blockchain stores a record of all transactions that are made through its network, that includes buying, selling, trading, or sending coins to another person. It is a distributed ledger, which can be shared across multiple areas.
+        Any participant in the network it is shared on can access the recorded ledger and is able to own, make changes or distribute copies to everyone that is in that same network. Think of it as having another pair of eyes being able to see these transactions. 
+        This information is stored in a chain of blocks, arranged chronologically. This same Blockchain has a way of verifying and validating to confirm any data that has been changed in the ledger.
+        There is a process that holds the ledger together known as mining or Bitcoin mining. The short version to mining - take a very powerful machine, similar to a computer but not quite, and that machine is strictly designed to solve mathematical algorithms to mine a Bitcoin as a reward.
+            </div> <!--End of Content Box-->
+            <div id="copyright">
+                Copyright &copy; 2022 Tina Talks
+            </div><!--End of Copyright-->
+        </div> <!-- End Of Site Root -->
+    </body>
+</html>

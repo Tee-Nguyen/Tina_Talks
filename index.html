@@ -1,21 +1,271 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tina Talks</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet'>
+        <style>
 
-</HTML>
-<head>
 
-    <title>Tina Talks</title>
+            body {
+                margin: 0;
+                font-family: 'Cormorant';
+                font-size: 18px;
+            }
+            #siteroot {
+                width:100%;
+            }
+            #gridcontainer {
+                width:100%;
+                position: fixed;
+                display: grid;
+                grid-template-columns: 200px auto;
+                height:50px;
+                background-color: #CACACA;
+                text-align: center;
+                padding-top: 30px;
+                border-bottom:1px solid #000;
+            }
+            #logo {
+                font-family: 'Copse';
+            }
+            #logo a:link {
+                /* no underline on the logo */
+                text-decoration: none;
+                color: #000;
+            }
+            #menu {
+                font-size: 1.1em;
+                display: grid;
+                justify-content: end;
+                /* 8 columns */
+                grid-template-columns: auto auto auto auto auto auto auto auto;
+            }
+            .menuitem {
+                /* the menu links */
+                padding-left:10px;
+                padding-right:10px;
+            }
+            .menuitem a:link {
+                /* no underline on the menu links */
+                text-decoration: none;
+                color: #000;
+            }
+            .menuitem a:hover {
+                /* mouse-over change color */
+                color: #7c817d;
+            }
+            .menuend {
+                /* a little space on the right side */
+                padding-left:30px;
+                padding-right:30px;
+            }
 
-</head>
+            .searchmouseover {
+                /* get darker when mouseover */
+                border:2px solid #000;
+                border-radius:20px;
+                width:100px;
+                padding:10px 20px;
+                background-color: #e5dfc9;
+            }
 
-<body>
-    <p>
-        Hello, everyone! My name is Tina. I am naming my blog, "Tina Talks". I have a tendency to talk a lot, so, that's why I'm naming it that. 
-        On this blog, I will be talking about things I enjoy and what I enjoy doing. Some examples are that, I like to bake (decorate cakes, cupcakes, etc.), cook (especially Vietnamese food) and experiment with making my own coffee. 
-        Outside of that, I like to shop, especially stroll down the aisles at Trader Joes, modify my car, collect designer bags, collect makeup, and lastly, spend time with my loved ones. 
-        I have a love for cars, and if I'm not modifying my car, I'm looking at ideas of what to do next. I love not only my car, but a variety of beautiful, fast cars, as well as luxury cars. 
+            .socialicon {
+                /* social media icons */
+                width:24px;height:24px;object-fit:cover;object-position:50% 50%;
+            }
+            #socialstrip {
+                display: grid;
+                /* 5 columns */
+                grid-template-columns: auto auto auto auto auto;
+            }
 
-    </p>
+            /* two squares in content */
+            #leftright {
+            padding-top:100px;
+            padding-bottom:100px;
+            height:100px;
+            font-size:100px;
+            text-align: center;
+            }
 
- </body> 
 
+            /* a space for blog post cards */
+            #blogpostbox {
+            width:100%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+            }
+            /* the blog card container */
+            .blogcard {
+                width: 200px;
+                border-radius: 5px;
+                overflow:hidden;
+                box-shadow: -2px 2px 5px grey;
+                background-color: grey;
+            }
+            /* Title of the Blog */
+            .blogtitle {
+                font-size: .8em;
+                text-align:center;
+                font-weight:bold;
+            }
+            /* make blog title links gray and no underline */
+            .blogtitle a {
+                color:white;
+                text-decoration: none;
+            }
+            /* image frame for blog card */
+            .blogimage img {
+                width:100%;
+                height: auto;
+            }
+
+
+            /* background color for blog card */
+            .white {
+                background-color: white;
+                border-bottom:2px solid #000;
+            }
+            /* Copyright */
+            #copyright {
+                text-align:center;
+                padding:40px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="siteroot">
+            <!--Top Site Header-->
+            <div id="gridcontainer">
+                <div id="logo">
+                    <a href="">Tina Talks</a>
+                </div>
+                <!--Begin Menu--> 
+                <div id="menu">
+                    <div class="menuitem">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="menuitem">
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+        
+                    <div class="menuitem">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+
+                    <div class="menuitem">
+                        <div id="socialstrip">
+                        
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/tina-nguyen-85968123a/">
+                                <img class="socialicon" src="./images/li.png" alt="Linked In Link">
+                                </a>
+                            </div>
+                        </div> <!-- End of Social Media -->
+                    </div> <!-- End of Menu Item -->
+                    <div class="menuend"> <!--blank space--> </div>
+                </div> <!-- End of Menu -->
+            </div> <!-- End of Top Header -->
+            <!--Begin Site Content-->
+            <div id="content">
+                    <!--2 square panels at top-->
+                    <div id="leftright">
+                    Tina Talks
+                    </div> <!--End of 2squares -->
+                    <div id="blogpostbox">
+                        <img class="blankimage">
+                    </div><!-- End of Panel 2 -->
+                </div> <!--End of 2squares -->
+                <div id="blogpostbox">
+
+                   
+                <!--Blog Card 1-->
+     
+                <div class="blogcard">
+                <div class="blogimage">
+                <div class="blogcover image1"></div>
+                <img src="images/sephoracolor.jpg" alt="Sephora iQ" class="blogimage">
+                </div>
+                <div class="blogtitle">
+                <a href="page1.html">AI in Sephora Color iQ</a>
+                </div>
+                </div>
+                    
+                 <!--Blog Card 2-->
+                <div class="blogcard">
+                <div class="blogimage">
+                <div class="blogcover image2"></div>
+                <img src="images/greyamazon.jpg" alt="amazon" class="blogimage">
+                </div>  
+                <div class="blogtitle">     
+                <a href="page2.html">Amazon</a>
+                </div>
+                </div>
+                   <!--End of Blog Card 2-->
+                    
+                    <!--Blog Card 3-->
+
+                <div class="blogcard">
+                <div class="blogimage">
+                <div class="blogcover image3"></div>
+                <img src="images/greyapple.jpg" alt="Apple" class="blogimage">
+                </div>  
+                <div class="blogtitle">
+                <a href="page3.html">Apple</a>
+                </div>
+                </div>
+                   <!--End of Blog Card 3-->
+                    
+                    <!--Blog Card 4-->
+                    <div class="blogcard">
+                    <div class="blogimage">
+                    <div class="blogcover image4"></div>
+                    <img src="images/gucciXsnap.jpg" alt="" class="blogimage">
+                    </div>
+                    <div class="blogtitle">
+                    <a href="page4.html">AR in Fashion</a>
+                    </div>  
+                    </div>
+                    <!--End of Blog Card 4-->
+                    
+                    <!--Blog Card 5-->
+                    <div class="blogcard">
+                    <div class="blogimage">
+                    <div class="blogcover image5"></div>
+                    <img src="images/blockchain.png" alt="blockchain" class="blogimage">
+                    </div>  
+                    <div class="blogtitle">
+                    <a href="page5.html">Blockchain Technology</a>
+                    </div>
+                    </div>
+                   <!--End of Blog Card 5-->
+                    
+                    <!--Blog Card 6-->
+                    <div class="blogcard">
+                    <div class="blogimage">
+                    <div class="blogcover image6"></div>
+                    <img src="./images/chanelmini2.JPG" alt="Chanel Mini" class="blogimage">
+                    </div>
+                    <div class="blogtitle">
+                    <a href="page6.html">Coco Chanel & NFC Chips</a>
+                    </div>
+                     </div>
+                    <!--End of Blog Card 6-->
+                    
+                </div><!--End of Blog Post Box-->
+            </div> <!--End of Content Box-->
+            <div id="copyright">
+                Copyright &copy; 2022 Tina Talks
+            </div><!--End of Copyright-->
+        </div> <!-- End Of Site Root -->
+    </body>
 </html>
